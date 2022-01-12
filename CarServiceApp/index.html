@@ -25,10 +25,10 @@
         </div>
         <!-- End Top Bar -->
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light static-top">
-            <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
+            <div class="container-fluid">
                 <a class="navbar-brand" href="#!"><img src="assets/img/logo.png" height="60px" alt="MVSM app Logo"/></a>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                <!-- <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                       <a class="nav-link active" aria-current="page" href="#">Home</a>
                       <a class="nav-link" aria-current="page" href="#">About</a>
@@ -36,7 +36,7 @@
                       <a class="nav-link" href="#">Screenshot</a>
                       <a class="nav-link" href="#">Contact</a>
                     </div>
-                  </div>
+                  </div> -->
                 <a class="btn btn-danger" href="#signup">Sign Up</a>
             </div>
         </nav>
@@ -44,11 +44,11 @@
         <header class="masthead overflow-hidden">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-4 position-relative">
-                        <div class="text-white masthead-form">
+                    <div class="col-10 col-md-8 col-lg-5 col-lg-4 position-relative">
+                        <div class="masthead-form">
                             <!-- Page heading-->
-                            <h2 class="mb-2 fw-lighter">Find Your Car !</h2>
-                            <h5 class="mb-5">It's easy. Let's Go.</h5>
+                            <h2 class="mb-2">Get Quote For Services !</h2>
+                            <h5 class="mb-4 fw-lighter">It's easy. Let's Go.</h5>
                             <!-- Signup form-->
                             <!-- * * * * * * * * * * * * * * *-->
                             <!-- * * SB Forms Contact Form * *-->
@@ -58,19 +58,46 @@
                             <!-- https://startbootstrap.com/solution/contact-forms-->
                             <!-- to get an API token!-->
                             <form class="form-subscribe" id="contactForm" data-sb-form-api-token="API_TOKEN">
+                                  <div class="row mb-2">
+                                    <div class="col">
+                                        <span>
+                                            Get instant quotes for your car service
+                                        </span>
+                                    </div>
+                                  </div>
                                   <div class="row mb-3">
                                     <div class="col">
-                                        <select class="form-select form-control form-control-sm bg-transparent" aria-label="Default select example">
-                                            <option selected>Select a Vehicle</option>
-                                            <option value="1">Bike</option>
-                                            <option value="2">Car</option>
+                                        <select class="form-select form-control form-control-sm shadow-sm" aria-label="Default select example">
+                                            <option selected>Select Vehicle</option>
+                                            <option value="1">Two Wheeler</option>
+                                            <option value="2">Four Wheeler</option>
                                           </select>
                                     </div>
                                    </div>
                                    <div class="row mb-3">
                                     <div class="col">
-                                        <select class="form-select form-control form-control-sm bg-transparent" aria-label="Default select example">
-                                            <option selected>Vehicle Type</option>
+                                        <select class="form-select form-control form-control-sm shadow-sm" aria-label="Default select example">
+                                            <option selected>Brand</option>
+                                            <option value="1">TVS</option>
+                                            <option value="2">Hero</option>
+                                            <option value="2">Honda</option>
+                                            <option value="2">Bajaj</option>
+                                            <option value="2">Yamaha</option>
+                                            <option value="2">Suzuki</option>
+                                            <option value="2">Royal Enfield</option>
+                                            <option value="2">Hero Electric</option>
+                                            <option value="2">Okinawa</option>
+                                            <option value="2">Piaggio</option>
+                                            <option value="2">Mahindra</option>
+                                            <option value="2">KTM</option>
+                                            <option value="2">ACTIVA</option>
+                                          </select>
+                                    </div>
+                                   </div>
+                                   <div class="row mb-5">
+                                    <div class="col">
+                                        <select class="form-select form-control form-control-sm shadow-sm" aria-label="Default select example">
+                                            <option selected>Model</option>
                                             <option value="1">Bike</option>
                                             <option value="2">Car</option>
                                           </select>
@@ -92,7 +119,7 @@
                                     </div>
                                 </div> -->
                                 <div class="row">
-                                    <div class="d-grid"><button class="btn btn-warning btn-sm" id="submitButton" type="submit"><i class="bi bi-search"></i>Search</button></div>
+                                    <div class="d-grid"><button class="btn btn-warning btn-md shadow-lg" id="submitButton" type="submit"><span class="text-uppercase fw-bolder">Check for prices free</span></button></div>
                                 </div>
                                 <!-- Submit success message-->
                                 <!---->
