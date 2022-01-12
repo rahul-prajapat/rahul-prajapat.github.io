@@ -144,8 +144,8 @@ h6, .h6 {
 
 .arrow_box {
 	position: relative;
-	background: #;
-	border-bottom: 4px solid #290f59;
+	border-bottom: 2px solid rgba(128, 128, 128,0.3);
+  padding-bottom: 1rem;
 }
 .arrow_box:after, .arrow_box:before {
 	top: 100%;
@@ -159,16 +159,16 @@ h6, .h6 {
 }
 
 .arrow_box:after {
-	border-color: rgba(0, 0, 0, 0);
-	border-top-color: #;
+	border-color: rgba(136, 183, 213, 0);
+	border-top-color: #ffffff;
 	border-width: 10px;
 	margin-left: -10px;
 }
 .arrow_box:before {
-	border-color: rgba(41, 15, 89, 0);
-	border-top-color: #290f59;
-	border-width: 16px;
-	margin-left: -16px;
+	border-color: rgba(194, 225, 245, 0);
+	border-top-color: rgba(128, 128, 128,0.3);
+	border-width: 13px;
+	margin-left: -13px;
 }
 
 p {
@@ -11344,6 +11344,13 @@ textarea.form-control-lg {
   padding-bottom: 7rem;
 }
 .features-icons{
+
+}
+
+.features-icons-item:hover {
+  background: #473070;
+  transition: ease-in-out 0.5s;
+  color: white;
 }
 
 .features-icons .features-icons-item {
