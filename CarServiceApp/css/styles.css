@@ -32,7 +32,7 @@
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
   --bs-primary-rgb: 255, 91, 0;
-  --bs-secondary-rgb: 108, 117, 125;
+  --bs-secondary-rgb: 41, 15, 89;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
@@ -142,6 +142,35 @@ h6, .h6 {
   font-size: 1rem;
 }
 
+.arrow_box {
+	position: relative;
+	background: #;
+	border-bottom: 4px solid #290f59;
+}
+.arrow_box:after, .arrow_box:before {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-color: rgba(0, 0, 0, 0);
+	border-top-color: #;
+	border-width: 10px;
+	margin-left: -10px;
+}
+.arrow_box:before {
+	border-color: rgba(41, 15, 89, 0);
+	border-top-color: #290f59;
+	border-width: 16px;
+	margin-left: -16px;
+}
+
 p {
   margin-top: 0;
   margin-bottom: 1rem;
@@ -225,7 +254,7 @@ sup {
 }
 
 a {
-  color: #0d6efd;
+  color: rgb(var(--bs-primary-rgb));
   text-decoration: underline;
 }
 a:hover {
@@ -2195,10 +2224,17 @@ progress {
 
 .form-control.bg-transparent{
 color:white;
+padding:0.2rem 3rem 0.2rem 1rem;
 }
-.form-control.bg-transparent:hover,.form-control.bg-transparent:focus{ 
+
+
+.form-control.bg-transparent:hover{ 
   color:wheat;
 }
+.form-control.bg-transparent:focus{
+  color:#212529;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .form-control {
     transition: none;
@@ -3057,8 +3093,8 @@ textarea.form-control-lg {
 
 .btn-secondary {
   color: #fff;
-  background-color: #6c757d;
-  border-color: #6c757d;
+  background-color: rgb(var(--bs-secondary-rgb));
+  border-color: rgb(var(--bs-secondary-rgb));
 }
 .btn-secondary:hover {
   color: #fff;
@@ -7772,6 +7808,9 @@ textarea.form-control-lg {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
 }
+.text-secondary{
+  color:rgb(var(--bs-secondary-rgb));
+}
 
 .text-body {
   --bs-text-opacity: 1;
@@ -11306,6 +11345,7 @@ textarea.form-control-lg {
 }
 .features-icons{
 }
+
 .features-icons .features-icons-item {
   max-width: 20rem;
 }
@@ -11388,6 +11428,17 @@ header .masthead-form:before{
 .testimonials .testimonial-item img {
   max-width: 12rem;
   box-shadow: 0px 5px 5px 0px #adb5bd;
+}
+
+.workshop
+{
+  padding-top:7rem;
+  padding-bottom:7rem;
+}
+
+.download-app{
+  padding-top:7rem;
+  padding-bottom:7rem;
 }
 
 .call-to-action {
