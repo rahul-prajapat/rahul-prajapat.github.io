@@ -11356,7 +11356,7 @@ header.masthead {
   background: url("../assets/img/home-screen.jpg") no-repeat center center;
   background-size: cover;
   padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-bottom: 10rem;
 }
 
 header.masthead:before {
