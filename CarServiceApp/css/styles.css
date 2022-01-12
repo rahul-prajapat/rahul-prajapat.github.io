@@ -1,15 +1,5 @@
 @charset "UTF-8";
-/*!
-* Start Bootstrap - Landing Page v6.0.4 (https://startbootstrap.com/theme/landing-page)
-* Copyright 2013-2021 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-landing-page/blob/master/LICENSE)
-*/
-/*!
- * Bootstrap v5.1.3 (https://getbootstrap.com/)
- * Copyright 2011-2021 The Bootstrap Authors
- * Copyright 2011-2021 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -41,7 +31,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 13, 110, 253;
+  --bs-primary-rgb: 255, 91, 0;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -2201,6 +2191,13 @@ progress {
           appearance: none;
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control.bg-transparent{
+color:white;
+}
+.form-control.bg-transparent:hover,.form-control.bg-transparent:focus{ 
+  color:wheat;
 }
 @media (prefers-reduced-motion: reduce) {
   .form-control {
@@ -11298,9 +11295,16 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+
+.quotation-bar{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
 .features-icons {
   padding-top: 7rem;
   padding-bottom: 7rem;
+}
+.features-icons{
 }
 .features-icons .features-icons-item {
   max-width: 20rem;
@@ -11353,8 +11357,8 @@ header .masthead-form:before{
 }
 @media (min-width: 768px) {
   header.masthead {
-    padding-top: 12rem;
-    padding-bottom: 12rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
   header.masthead h1, header.masthead .h1 {
     font-size: 3rem;
