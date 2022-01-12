@@ -11353,10 +11353,10 @@ textarea.form-control-lg {
 header.masthead {
   position: relative;
   background-color: #343a40;
-  background: url("../assets/img/home-screen.jpg") no-repeat center center;
+  background: url("../assets/img/masthead-background.jpg") no-repeat center center;
   background-size: cover;
-  padding-top: 8rem;
-  padding-bottom: 10rem;
+  padding-top: 15rem;
+  padding-bottom: 4rem;
 }
 
 header.masthead:before {
