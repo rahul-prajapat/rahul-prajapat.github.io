@@ -11391,8 +11391,8 @@ header .masthead-form:before{
 }
 @media (min-width: 768px) {
   header.masthead {
-    padding-top: 20rem;
-    padding-bottom: 20rem;
+    padding-top: 11rem;
+    padding-bottom: 5rem;
   }
   header.masthead h1, header.masthead .h1 {
     font-size: 3rem;
