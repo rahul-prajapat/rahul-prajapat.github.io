@@ -9,13 +9,14 @@ function sendmail(){
 
   // var body = $('#body').val();
 
-  var Body='<h4>Brand:'+name+'</h4>'+'<br><h4>Vehicle: '+email+'</h4>'+'<br><h4>Mobile Number'+mobile+'</h4>';
+  var Body='<h4>Brand: '+name+'</h4>'+'<br><h4>Vehicle: '+email+'</h4>'+'<br><h4>Mobile Number: '+mobile+'</h4>';
   //console.log(name, phone, email, message);
 
   Email.send({
     SecureToken:"7cffed80-7985-443a-9fde-4f92cf48fb38",
-    To: 'prajapat4.rahul@gmail.com',
+    To: 'mvsmsolutions@gmail.com',
     From: "darkfitness2013@gmail.com",
+    Cc:"darkfitness2013@gmail.com",
     Subject: "New repair request on contact from "+ mobile + " for " + name + " " + email,
     Body: Body
   }).then(

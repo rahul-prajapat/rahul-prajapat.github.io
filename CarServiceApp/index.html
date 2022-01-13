@@ -50,13 +50,6 @@
                             <h2 class="mb-2">Get Quote For Services !</h2>
                             <h5 class="mb-4 fw-lighter">It's easy. Let's Go.</h5>
                             <!-- Signup form-->
-                            <!-- * * * * * * * * * * * * * * *-->
-                            <!-- * * SB Forms Contact Form * *-->
-                            <!-- * * * * * * * * * * * * * * *-->
-                            <!-- This form is pre-integrated with SB Forms.-->
-                            <!-- To make this form functional, sign up at-->
-                            <!-- https://startbootstrap.com/solution/contact-forms-->
-                            <!-- to get an API token!-->
                             <form class="form-subscribe" id="contactForm" action="javascript:sendmail()" method="post">
                                   <div class="row mb-2">
                                     <div class="col">
@@ -67,7 +60,7 @@
                                   </div>
                                   <div class="row mb-3">
                                     <div class="col">
-                                        <select class="form-select form-control form-control-sm shadow-sm" aria-label="Default select example">
+                                        <select class="form-select form-control form-control-sm shadow-sm" aria-label="Default select example" required>
                                             <option selected>Select Vehicle</option>
                                             <option value="1">Two Wheeler</option>
                                             <option value="2">Four Wheeler</option>
@@ -76,7 +69,7 @@
                                    </div>
                                    <div class="row mb-3">
                                     <div class="col">
-                                        <select class="form-select form-control form-control-sm shadow-sm" id="brand" aria-label="Default select example">
+                                        <select class="form-select form-control form-control-sm shadow-sm" id="brand" aria-label="Default select example" required>
                                             <option selected>Brand</option>
                                             <option value="TVS">TVS</option>
                                             <option value="Hero">Hero</option>
@@ -96,7 +89,8 @@
                                    </div>
                                    <div class="row mb-3">
                                     <div class="col">
-                                        <select class="form-select form-control form-control-sm shadow-sm" id="vehicle" aria-label="Default select example">
+                                        <select class="form-select form-control form-control-sm shadow-sm" id="vehicle" aria-label="Default select example" required>
+                                            <option selected>Vehicle</option>
                                             <option value="Ntorq 125">Ntorq 125</option>
                                             <option value="Apache RTR 160 4V">Apache RTR 160 4V</option>
                                             <option value="Apache RTR 180">Apache RTR 180</option>
@@ -129,7 +123,7 @@
                                    </div>
                                    <div class="row mb-5">
                                     <div class="col">
-                                        <input type="text" class="form-control shadow-sm" id="mobile" placeholder="Enter Mobile Number">
+                                        <input type="text" class="form-control shadow-sm" id="mobile" placeholder="Enter Mobile Number" required>
                                     </div>
                                    </div>
                                 <!-- Email address input-->
