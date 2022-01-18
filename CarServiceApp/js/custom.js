@@ -9,7 +9,7 @@ function sendmail(){
 
   // var body = $('#body').val();
 
-  var Body='<h4>Brand: '+name+'</h4>'+'<br><h4>Vehicle: '+email+'</h4>'+'<br><h4>Mobile Number: '+mobile+'</h4>';
+  var Body='<img src="CarServiceApp/assets/img/logo.png"/>' +'<h4>Brand: '+name+'</h4>'+'<br><h4>Vehicle: '+email+'</h4>'+'<br><h4>Mobile Number: '+mobile+'</h4>';
   //console.log(name, phone, email, message);
 
   Email.send({

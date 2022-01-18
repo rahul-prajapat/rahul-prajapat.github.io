@@ -11406,6 +11406,15 @@ header .masthead-form:before{
   min-height: 30rem;
   background-size: cover;
 }
+
+
+@media (max-width: 767px) {
+  .showcase .showcase-img {
+    background-position:center right;
+  }
+}
+
+
 @media (min-width: 768px) {
   .showcase .showcase-text {
     padding: 7rem;
@@ -11457,4 +11466,13 @@ header .masthead-form:before{
 footer.footer {
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+
+footer .bottom-bar{
+  background-color: #a3a3a333;
+  color: rgb(92 92 92);
+  padding-top: 0.5rem;
+  font-size: 14px;
+  padding-bottom: 0.5rem;
+  margin-top: 5rem;
 }
