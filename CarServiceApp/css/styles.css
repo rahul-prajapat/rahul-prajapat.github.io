@@ -11469,22 +11469,21 @@ footer.footer {
   padding-bottom: 4rem;
 }
 
-.bottom-bar{
+.bottombar{
   font-size: 14px;
-  padding:7rem 0;
 }
 
 
-.page-wrapper {
+.pagewrapper {
   padding: 7rem 0;
   padding-top: 3rem;
 }
 
-.page-wrapper .container{
+.pagewrapper .container{
  max-width:900px;
 }
 
-.page-wrapper .container p {
+.pagewrapper .container p {
   text-align:justify;
 }
 
