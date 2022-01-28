@@ -11471,6 +11471,7 @@ footer.footer {
 
 .bottombar{
   font-size: 14px;
+  overflow:hidden;
 }
 
 
