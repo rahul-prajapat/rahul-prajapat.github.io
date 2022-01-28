@@ -11393,6 +11393,7 @@ header .masthead-form:before{
   header.masthead {
     padding-top: 11rem;
     padding-bottom: 5rem;
+    height:100vh;
   }
   header.masthead h1, header.masthead .h1 {
     font-size: 3rem;
@@ -11468,11 +11469,22 @@ footer.footer {
   padding-bottom: 4rem;
 }
 
-footer .bottom-bar{
-  background-color: #a3a3a333;
-  color: rgb(92 92 92);
-  padding-top: 0.5rem;
+.bottom-bar{
   font-size: 14px;
-  padding-bottom: 0.5rem;
-  margin-top: 5rem;
+  padding:7rem 0;
 }
+
+
+.page-wrapper {
+  padding: 7rem 0;
+  padding-top: 3rem;
+}
+
+.page-wrapper .container{
+ max-width:900px;
+}
+
+.page-wrapper .container p {
+  text-align:justify;
+}
+

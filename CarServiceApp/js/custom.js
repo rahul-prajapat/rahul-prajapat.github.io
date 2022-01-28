@@ -37,3 +37,19 @@ function sendmail(){
 
 
 }
+
+var vehicletype = $('#vehicletype').val();
+
+
+
+
+// $("#hello").click(function(){
+//   $("#hello").load("hello.txt");
+// });
+
+
+// $("#vehicletype:only-child").click(function(){
+//   var vehicle = $( "#vehicletype option:selected" ).text();
+//   alert(vehicle);
+// });
+
