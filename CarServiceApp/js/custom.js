@@ -38,18 +38,104 @@ function sendmail(){
 
 }
 
-var vehicletype = $('#vehicletype').val();
+// var vehicletype = $('#vehicletype').val();
 
-
-
-
-// $("#hello").click(function(){
-//   $("#hello").load("hello.txt");
+// $("#submitButton").click(function(){
+//   var vehicletype = $('#vehicletype').find(":selected").text()
+//  alert(vehicletype);
 // });
 
+$("#vehicletype").click(function(){
+  var vehicletype = $('#vehicletype').find(":selected").text();
+  if (vehicletype == "Two Wheeler") {
+    $("#btwowheeler").toggle();
+    $("#bselect").toggle();
+  } else if (vehicletype == "Four Wheeler") {
+    $("#bfourwheeler").toggle();
+    $("#bselect").toggle();
+  }else{
+    $("#bselect").show();
+  }
+});
 
-// $("#vehicletype:only-child").click(function(){
-//   var vehicle = $( "#vehicletype option:selected" ).text();
-//   alert(vehicle);
-// });
 
+
+$("#btwowheeler").click(function(){
+  var vehiclemodel = $('#btwowheeler').find(":selected").text();
+  if (vehiclemodel == "TVS") {
+    $("#tvs").toggle();
+    $("#modelselect").toggle();
+  } else if (vehiclemodel == "Hero") {
+    $("#hero").toggle();
+    $("#modelselect").toggle();
+  }else if (vehiclemodel == "Honda") {
+    $("#honda").toggle();
+    $("#modelselect").toggle();
+  }
+  else if (vehiclemodel == "Bajaj") {
+    $("#bajaj").toggle();
+    $("#modelselect").toggle();
+  }
+  else if (vehiclemodel == "Yamaha") {
+    $("#yamaha").toggle();
+    $("#modelselect").toggle();
+  }
+  else if (vehiclemodel == "Suzuki") {
+    $("#suzuki").toggle();
+    $("#modelselect").toggle();
+  }
+  else if (vehiclemodel == "Royal Enfield") {
+    $("#royalenfield").toggle();
+    $("#modelselect").toggle();
+  }
+  else if (vehiclemodel == "Hero Electric") {
+    $("#heroelectric").toggle();
+    $("#modelselect").toggle();
+  }
+  else if (vehiclemodel == "Okinawa") {
+    $("#okinawa").toggle();
+    $("#modelselect").toggle();
+  }
+  else if (vehiclemodel == "Piaggio") {
+    $("#piaggio").toggle();
+    $("#modelselect").toggle();
+  }
+  else if (vehiclemodel == "Mahindra") {
+    $("#mahindra").toggle();
+    $("#modelselect").toggle();
+  }
+  else if (vehiclemodel == "KTM") {
+    $("#ktm").toggle();
+    $("#modelselect").toggle();
+  }
+  else if (vehiclemodel == "ACTIVA") {
+    $("#activa").toggle();
+    $("#modelselect").toggle();
+  }
+  else{
+    $("#modelselect").show();
+  }
+});
+
+
+
+$("#bfourwheeler").click(function(){
+  var vehiclemodel = $('#bfourwheeler').find(":selected").text();
+  if (vehiclemodel == "MARUTI SUZUKI") {
+    $("#marutisuzuki").toggle();
+    $("#modelselect").toggle();
+  } else if (vehiclemodel == "MAHINDRA") {
+    $("#mahindra").toggle();
+    $("#modelselect").toggle();
+  }else if (vehiclemodel == "TATA") {
+    $("#tata").toggle();
+    $("#modelselect").toggle();
+  }
+  else if (vehiclemodel == "HONDA") {
+    $("#honda").toggle();
+    $("#modelselect").toggle();
+  }
+  else{
+    $("#modelselect").show();
+  }
+});

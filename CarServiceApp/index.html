@@ -61,15 +61,18 @@
                                   <div class="row mb-3">
                                     <div class="col">
                                         <select id="vehicletype" class="form-select form-control form-control-sm shadow-sm" aria-label="Default select example" required>
-                                            <option selected>Select Vehicle Type</option>
-                                            <option value="1">Two Wheeler</option>
-                                            <option value="2">Four Wheeler</option>
+                                            <option value="0" selected>Select Vehicle Type</option>
+                                            <option value="2">Two Wheeler</option>
+                                            <option value="4">Four Wheeler</option>
                                           </select>
                                     </div>
                                    </div>
                                    <div class="row mb-3">
                                     <div class="col">
-                                        <select class="form-select form-control form-control-sm shadow-sm" id="brand" aria-label="Default select example" required>
+                                        <select class="form-select form-control form-control-sm shadow-sm" id="bselect" aria-label="Default select example" required>
+                                            <option selected>Select Company Name</option>
+                                          </select>
+                                        <select class="form-select form-control form-control-sm shadow-sm" style="display:none;" id="btwowheeler" aria-label="Default select example" required>
                                             <option selected>Select Company Name</option>
                                             <option value="TVS">TVS</option>
                                             <option value="Hero">Hero</option>
@@ -85,12 +88,39 @@
                                             <option value="KTM">KTM</option>
                                             <option value="ACTIVA">ACTIVA</option>
                                           </select>
+                                          <select class="form-select form-control form-control-sm shadow-sm" style="display:none;" id="bfourwheeler" aria-label="Default select example" required>
+                                            <option selected>Select Company Name</option>
+                                            <option>MARUTI SUZUKI</option>
+                                                <option>MAHINDRA</option>
+                                                <option>TATA</option>
+                                                <option>HONDA</option>
+                                                <option>TOYOTA</option>
+                                                <option>CHEVROLET</option>
+                                                <option>NISSAN</option>
+                                                <option>RANAULT</option>
+                                                <option>FORD</option>
+                                                <option>SKODA</option>
+                                                <option>HYUNDAI</option>
+                                                <option>VOLKSWAGEN</option>
+                                                <option>LAND ROVER</option>
+                                                <option>BMW</option>
+                                                <option>AUDI</option>
+                                                <option>JEEP</option>
+                                                <option>JAGUAR</option>
+                                                <option>MERCEDES-BENZ</option>
+                                                <option>MG</option>
+                                                <option>KIA</option>
+                                                <option>DATSUN</option>
+                                                <option>FIAT</option>
+                                          </select>
                                     </div>
                                    </div>
                                    <div class="row mb-3">
                                     <div class="col">
-                                        <select class="form-select form-control form-control-sm shadow-sm" id="vehicle" aria-label="Default select example" required>
+                                        <select id="modelselect" class="form-select form-control form-control-sm shadow-sm" aria-label="Default select example" required>
                                             <option selected>Select Model Name</option>
+                                          </select>
+                                        <select id="tvs" class="form-select form-control form-control-sm shadow-sm" style="display:none;" aria-label="Default select example" required>
                                             <option value="Ntorq 125">Ntorq 125</option>
                                             <option value="Apache RTR 160 4V">Apache RTR 160 4V</option>
                                             <option value="Apache RTR 180">Apache RTR 180</option>
@@ -109,21 +139,308 @@
                                             <option value="XL HD">XL HD</option>
                                             <option value="Radeon">Radeon</option>
                                             <option value="TVS max 100">TVS max 100</option>
-                                            <option value="Splendor Plus">Splendor Plus</option>
-                                            <option value="Passion Pro">Passion Pro</option>
-                                            <option value="HF Deluxe">HF Deluxe</option>
-                                            <option value="HF Deluxe i3s">HF Deluxe i3s</option>
-                                            <option value="Glamour 125">Glamour 125</option>
-                                            <option value="Super Splendor">Super Splendor</option>
-                                            <option value="Passion Pro i3S">Passion Pro i3S</option>
-                                            <option value="Glamour">Glamour</option>
-                                            <option value="Passion Xpro">Passion Xpro</option>
                                           </select>
+                                          <select id="hero" class="form-select form-control form-control-sm shadow-sm" style="display:none;" aria-label="Default select example" required>
+                                            <option>Splendor Plus</option>
+                                            <option>Passion Pro</option>
+                                            <option>HF Deluxe</option>
+                                            <option>HF Deluxe i3s</option>
+                                            <option>Glamour 125</option>
+                                            <option>Super Splendor</option>
+                                            <option>Passion Pro i3S</option>
+                                            <option>Glamour</option>
+                                            <option>Passion Xpro</option>
+                                            <option>Maestro Edge</option>
+                                            <option>Glamour Fi</option>
+                                            <option>Splendor iSMART 110</option>
+                                            <option>Xtreme Sports</option>
+                                            <option>Karizma ZMR</option>
+                                            <option>Splendor Pro</option>
+                                            <option>Duet</option>
+                                            <option>Pleasure</option>
+                                            <option>Xtreme 200R</option>
+                                            <option>HF Deluxe Eco</option>
+                                            <option>Achiever</option>
+                                            <option>HF Dawn</option>
+                                            <option>HF Deluxe</option>
+                                            <option>CD Deluxe</option>
+                                          </select>
+                                        <select id="honda" class="form-select form-control form-control-sm shadow-sm" style="display:none;" aria-label="Default select example" required>
+                                                                            <option>X-Blade</option>
+                                                                            <option>Activa 5G</option>
+                                                                            <option>CB Shine SP</option>
+                                                                            <option>CB Hornet 160R</option>
+                                                                            <option>Livo</option>
+                                                                            <option>CB Unicorn 160</option>
+                                                                            <option>Grazia</option>
+                                                                            <option>CB Shine</option>
+                                                                            <option>Dio</option>
+                                                                            <option>Navi</option>
+                                                                            <option>CBR 250R</option>
+                                                                            <option>Activa 125</option>
+                                                                            <option>CB Unicorn 150</option>
+                                                                            <option>Aviator</option>
+                                                                            <option>CD 110 Dream</option>
+                                                                            <option>Activa i</option>
+                                                                            <option>Dream Yuga</option>
+                                                                            <option>Cliq</option>
+                                                                            <option>Gold Wing</option>
+                                                                            <option>Dream Neo</option>
+                                                                            <option>CBR 1000RR</option>
+                                                                            <option>CBR 650F</option>
+                                                                            <option>CB 1000R</option>
+                                                                            <option>CRF1000L Africa Twin</option>
+                                        </select>
+                                        <select id="bajaj" class="form-select form-control form-control-sm shadow-sm" style="display:none;" aria-label="Default select example" required>
+                                                                            <option>Pulsar 150</option>
+                                                                            <option>CT 100</option>
+                                                                            <option>Pulsar 200 NS</option>
+                                                                            <option>Avenger Street 220</option>
+                                                                            <option>Dominar 400</option>
+                                                                            <option>Pulsar 220</option>
+                                                                            <option>V15</option>
+                                                                            <option>Pulsar NS160</option>
+                                                                            <option>Pulsar RS 200</option>
+                                                                            <option>Pulsar 180</option>
+                                                                            <option>Avenger Street 180</option>
+                                                                            <option>Discover 110</option>
+                                                                            <option>Platina 100</option>
+                                                                            <option>V12</option>
+                                                                            <option>Discover 125</option>
+                                                                            <option>Avenger Cruise 220</option>
+                                                                            <option>Kawasaki Caliber</option>
+                                        </select>
+                                        <select id="yamaha" class="form-select form-control form-control-sm shadow-sm" style="display:none;" aria-label="Default select example" required>
+                                                                    <option>R15 V3.0</option>
+                                                                        <option>FZ S V2.0 FI</option>
+                                                                        <option>FZ 25</option>
+                                                                        <option>Fazer 25</option>
+                                                                        <option>FZ V2.0 FI</option>
+                                                                        <option>YZF R1</option>
+                                                                        <option>Fazer V2.0 FI</option>
+                                                                        <option>Fascino</option>
+                                                                        <option>Saluto</option>
+                                                                        <option>SZ RR V2.0</option>
+                                                                        <option>YZF R3</option>
+                                                                        <option>Cygnus Ray ZR</option>
+                                                                        <option>Alpha</option>
+                                                                        <option>YZF R15S</option>
+                                                                        <option>Saluto RX</option>
+                                                                        <option>MT-09</option>
+                                                                        <option>RAY Z</option>
+                                        </select>
+                                        <select id="suzuki" class="form-select form-control form-control-sm shadow-sm" style="display:none;" aria-label="Default select example" required>
+                                                                <option>Intruder</option>
+                                                                <option>Gixxer</option>
+                                                                <option>Burgman</option>
+                                                                <option>Hayabusa</option>
+                                                                <option>Gixxer SF</option>
+                                                                <option>Intruder M1800R</option>
+                                                                <option>New Access 125</option>
+                                                                <option>GSX-S750</option>
+                                                                <option>GSX R1000</option>
+                                                                <option>Lets</option>
+                                                                <option>Hayate EP</option>
+                                                                <option>GSX S1000F</option>
+                                                                <option>GSX-R1000R</option>
+                                                                <option>V-Strom 650XT</option>
+                                                                <option>V-Strom 1000</option>
+                                                                <option>GSX S1000</option>
+                                                                <option>RM-Z250</option>
+                                                                <option>RM-Z450</option>
+                                        </select>
+                                        <select id="royalenfield" class="form-select form-control form-control-sm shadow-sm" style="display:none;" aria-label="Default select example" required>
+                                                                <option>Classic 350</option>
+                                                                <option>Thunderbird 350X</option>
+                                                                <option>Bullet 350</option>
+                                                                <option>Classic 500</option>
+                                                                <option>Thunderbird 350</option>
+                                                                <option>Himalayan</option>
+                                                                <option>Bullet 500</option>
+                                                                <option>Thunderbird 500X</option>
+                                                                <option>Thunderbird 500</option>
+                                                                <option>Classic Chrome</option>
+                                                                <option>Classic Desert Storm</option>
+                                        </select>
+                                        <select id="heroelectric" class="form-select form-control form-control-sm shadow-sm" style="display:none;" aria-label="Default select example" required>
+                                                            <option>Flash</option>
+                                                            <option>Maxi</option>
+                                                            <option>Optima Plus</option>
+                                                            <option>Photon</option>
+                                                            <option>NYX</option>
+                                                            <option>Cruz</option>
+                                                            <option>E-Sprint</option>
+                                                            <option>Wave Dx</option>
+                                        </select>
+                                        <select id="okinawa" class="form-select form-control form-control-sm shadow-sm" style="display:none;" aria-label="Default select example" required>
+                                                        <option>Praise</option>
+                                                        <option>Ridge</option>
+                                                        <option>Ridge Plus</option>
+                                        </select>
+                                        <select id="piaggio" class="form-select form-control form-control-sm shadow-sm" style="display:none;" aria-label="Default select example" required>
+                                                    <option>Vespa</option>
+                                                    <option>Vespa 150</option>
+                                                    <option>Vespa 70th Anniversary Edition</option>
+                                        </select>
+                                        <select id="mahindra" class="form-select form-control form-control-sm shadow-sm" style="display:none;" aria-label="Default select example" required>
+                                                    <option>Mojo</option>
+                                                    <option>Centuro</option>
+                                                    <option>Gusto</option>
+                                                    <option>Centuro Rockstar</option>
+                                                    <option>Gusto 125</option>
+                                        </select>
+                                        <select id="ktm" class="form-select form-control form-control-sm shadow-sm" style="display:none;" aria-label="Default select example" required>
+                                                    <option>RC 390</option>
+                                                    <option>RC 200</option>
+                                                    <option>390 Duke</option>
+                                                    <option>200 Duke</option>
+                                                    <option>250 Duke</option>
+                                        </select>
+                                        <select id="activa" class="form-select form-control form-control-sm shadow-sm" style="display:none;" aria-label="Default select example" required>
+                                            <option>Old</option>
+                                            <option>N/M</option>
+                                        </select>
+                            <!-- cars models from here -->
+                                        <select id="marutisuzuki" class="form-select form-control form-control-sm shadow-sm" style="display:none;" aria-label="Default select example" required>
+                                                <option>800cc</option>
+                                                <option>OMNI VAN</option>
+                                                <option>1000/ESTEEM</option>
+                                                <option>GYPSY</option>
+                                                <option>ZEN</option>
+                                                <option>GYPSY KING</option>
+                                                <option>ALTO</option>
+                                                <option>VERSA</option>
+                                                <option>WAGON R</option>
+                                                <option>BALENO</option>
+                                                <option>800CC AC</option>
+                                                <option>GRAND VITARA</option>
+                                                <option>SWIFT</option>
+                                                <option>SWIFT/SWIFT DEZIRA DIESEL</option>
+                                                <option>SWFIT DEZIRA</option>
+                                                <option>ALTO K10</option>
+                                                <option>ALTO 800</option>
+                                                <option>ERTIGA</option>
+                                                <option>WAGONR NEW</option>
+                                                <option>SWFIT NEW</option>
+                                                <option>CELERIO-155</option>
+                                                <option>CELERIO-165</option>
+                                                <option>CIAZ</option>
+                                                <option>STINGRAY</option>
+                                                <option>BELENO NEW</option>
+                                                <option>S-CROSS</option>
+                                                <option>BREZZA</option>
+                                                <option>IGNIS</option>
+                                                <option>DESIRE</option>
+                                                <option>SUPER CARRY</option>
+                                                <option>RITZ</option>
+                                        </select>
+                                        <select id="mahindra" class="form-select form-control form-control-sm shadow-sm" style="display:none;" aria-label="Default select example" required>
+                                            <option>SCORPIO slx4WD</option>
+                                                <option>XYLO</option>
+                                                <option>GIO</option>
+                                                <option>MAXXIMO CARRIER</option>
+                                                <option>MAXXIMO MINIVAN</option>
+                                                <option>SCORPIO MHAWK (ALL NEW)</option>
+                                                <option>XYLO MEAGLE</option>
+                                                <option>XYLO MHAWK</option>
+                                                <option>GENIO DC</option>
+                                                <option>THAR CRDe</option>
+                                                <option>VARITO</option>
+                                                <option>XUV 500</option>
+                                                <option>QUANTAO</option>
+                                                <option>REXTON</option>
+                                                <option>THAR CRDE BS IV</option>
+                                                <option>THAR DI</option>
+                                                <option>XYLO mDI CRDe</option>
+                                                <option>ZENIO</option>
+                                                <option>BOLERO VLx</option>
+                                                <option>NEW GEN SCORPIO S4/S10</option>
+                                                <option>REXTON AT/MT</option>
+                                                <option>e20</option>
+                                                <option>JEETO</option>
+                                                <option>TUV 300NEW</option>
+                                                <option>KUV 100</option>
+                                                <option>NUVOSPORTS</option>
+                                                <option>SUPRO</option>
+                                                <option>AL TURAS G4</option>
+                                                <option>MARAZZO (CUSTOMIZED)</option>
+                                                <option>NEW XUV500(CUSTOMIZED)</option>
+                                                <option>TUV 300 PLUS</option>
+                                                <option>XUV300(CUSTOMIZED)</option>
+                                                <option>JEEP/OMMANDOR</option>
+                                                <option>BOLERO</option>
+                                                <option>VOYAGER</option>
+                                                <option>LOGAN</option>
+                                                <option>BOLERO MAXI TRUCK BS</option>
+                                                <option>MAX TRUCK</option>
+                                                <option>BOLERO CAMRER</option>
+                                                <option>BOLERO PUK UP EXTRA</option>
+                                    </select>
+                                    <select id="tata" class="form-select form-control form-control-sm shadow-sm" style="display:none;" aria-label="Default select example" required>
+                                            <option>SUMO 4*4/ SAFARI</option>
+                                            <option>ESTATE/EISRRA/SUMO DLX</option>
+                                            <option>INDICA MECH STR</option>
+                                            <option>SUMO SE MECH STR</option>
+                                            <option>INDICA PAS</option>
+                                            <option>SUMO 2000 MECH STR</option>
+                                            <option>SUMO 2000 PAS/EZI</option>
+                                            <option>207 DI PAS</option>
+                                            <option>207 DI MECH STR</option>
+                                            <option>INDIGO</option>
+                                            <option>INDIGO MARINA</option>
+                                            <option>SPACIO</option>
+                                            <option>SPACIO EXZ</option>
+                                            <option>ACE</option>
+                                            <option>INDICA VISTA</option>
+                                            <option>WINGER</option>
+                                            <option>INDIGO MANZA</option>
+                                            <option>NANO</option>
+                                            <option>MAGIC IRIS/ACE ZIP</option>
+                                            <option>ARIA</option>
+                                            <option>VENTURE</option>
+                                            <option>SAFARI STORME</option>
+                                            <option>SUPER ACE</option>
+                                            <option>TATA ZIP</option>
+                                            <option>XENON</option>
+                                            <option>ZEST</option>
+                                            <option>BOLT</option>
+                                            <option>NANO TWIST</option>
+                                            <option>HEXA</option>
+                                            <option>TIAGO</option>
+                                            <option>NEXON</option>
+                                            <option>TIGOR</option>
+                                            <option>XENON YODHA</option>
+                                            <option>HARRIER</option>
+                                            <option>SUMO</option>
+                                    </select>
+                                    <select id="honda" class="form-select form-control form-control-sm shadow-sm" style="display:none;" aria-label="Default select example" required>
+                                            <option>ACCORD</option>
+                                            <option>HONDA CITY IT/IZ</option>
+                                            <option>HONDA CITY LQ</option>
+                                            <option>CRV</option>
+                                            <option>HONDA CITY LK</option>
+                                            <option>V-TECH</option>
+                                            <option>CIVIC</option>
+                                            <option>CIVIC HYBRID</option>
+                                            <option>JAZZ</option>
+                                            <option>HONDA CITY EX-A/LX-A</option>
+                                            <option>BRIO</option>
+                                            <option>AMAZE</option>
+                                            <option>HONDA CITY NEW</option>
+                                            <option>MOBILIO</option>
+                                            <option>JAZZ NEW</option>
+                                            <option>ACCORD WHEEL SIZE 17"</option>
+                                            <option>ACCORD WHEEL SIZE 18"</option>
+                                            <option>CITY NEW</option>
+                                            <option>WR-V</option>
+                                            <option>NEW CIVIC (customized)</option>
+                                            <option>BRV</option>
+                                </select>
                                     </div>
                                    </div>
                                    <div class="row mb-5">
                                     <div class="col">
-                                        <input type="text" class="form-control shadow-sm" id="mobile" placeholder="Enter Mobile Number" required>
+                                        <input type="text" class="form-control shadow-sm"  id="mobile" placeholder="Enter Mobile Number" required>
                                     </div>
                                    </div>
                                 <!-- Email address input-->
