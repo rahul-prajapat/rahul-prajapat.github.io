@@ -9,7 +9,7 @@ function sendmail(){
 
   // var body = $('#body').val();
 
-  var Body='<img src="CarServiceApp/assets/img/logo.png"/>' +'<h4>Brand: '+name+'</h4>'+'<br><h4>Vehicle: '+email+'</h4>'+'<br><h4>Mobile Number: '+mobile+'</h4>';
+  var Body='<img src="https://rahul-prajapat.github.io/CarServiceApp/assets/img/logo.png  "/>' +'<h4>Brand: '+name+'</h4>'+'<br><h4>Vehicle: '+email+'</h4>'+'<br><h4>Mobile Number: '+mobile+'</h4>';
   //console.log(name, phone, email, message);
 
   Email.send({
@@ -45,22 +45,28 @@ function sendmail(){
 //  alert(vehicletype);
 // });
 
-$("#vehicletype").click(function(){
-  var vehicletype = $('#vehicletype').find(":selected").text();
-  if (vehicletype == "Two Wheeler") {
-    $("#btwowheeler").toggle();
-    $("#bselect").toggle();
-  } else if (vehicletype == "Four Wheeler") {
-    $("#bfourwheeler").toggle();
-    $("#bselect").toggle();
-  }else{
-    $("#bselect").show();
-  }
+$(document).ready(function(){
+  $("#vehicletype").focusout(function(){
+    var vehicletype = $(this).find(":selected").text();
+    if(vehicletype == "Select Vehicle Type"){
+
+    }
+      else if (vehicletype == "Two Wheeler") {
+        $("#bfourwheeler").hide();
+        $("#bselect").hide();
+      $("#btwowheeler").show();
+    } else if (vehicletype == "Four Wheeler") {
+      $("#btwowheeler").hide();
+      $("#bselect").hide();
+      $("#bfourwheeler").show();
+    }else{
+      $("#bselect").show();
+    }
+  });
 });
 
 
-
-$("#btwowheeler").click(function(){
+$("#btwowheeler").focusout(function(){
   var vehiclemodel = $('#btwowheeler').find(":selected").text();
   if (vehiclemodel == "TVS") {
     $("#tvs").toggle();
@@ -119,7 +125,7 @@ $("#btwowheeler").click(function(){
 
 
 
-$("#bfourwheeler").click(function(){
+$("#bfourwheeler").focusout(function(){
   var vehiclemodel = $('#bfourwheeler').find(":selected").text();
   if (vehiclemodel == "MARUTI SUZUKI") {
     $("#marutisuzuki").toggle();
