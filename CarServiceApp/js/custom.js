@@ -138,7 +138,78 @@ $("#bfourwheeler").focusout(function(){
     $("#modelselect").toggle();
   }
   else if (vehiclemodel == "HONDA") {
-    $("#honda").toggle();
+    $("#honda1").toggle();
+    $("#modelselect").toggle();
+  }
+  else if (vehiclemodel == "TOYOTA") {
+    $("#toyota").toggle();
+    $("#modelselect").toggle();
+  }
+  else if (vehiclemodel == "CHEVROLET") {
+    $("#chevrolet").toggle();
+    $("#modelselect").toggle();
+  }
+  else if (vehiclemodel == "NISSAN") {
+    $("#nissan").toggle();
+    $("#modelselect").toggle();
+  }
+  else if (vehiclemodel == "RANAULT") {
+    $("#ranault").toggle();
+    $("#modelselect").toggle();
+  }else if (vehiclemodel == "FORD") {
+    $("#ford").toggle();
+    $("#modelselect").toggle();
+  }
+  else if (vehiclemodel == "SKODA") {
+    $("#skoda").toggle();
+    $("#modelselect").toggle();
+  }
+  else if (vehiclemodel == "HYUNDAI") {
+    $("#hyundai").toggle();
+    $("#modelselect").toggle();
+  }
+  else if (vehiclemodel == "VOLKSWAGEN") {
+    $("#volkswagen").toggle();
+    $("#modelselect").toggle();
+  }
+  else if (vehiclemodel == "LAND ROVER") {
+    $("#land-rover").toggle();
+    $("#modelselect").toggle();
+  }
+  else if (vehiclemodel == "BMW") {
+    $("#bmw").toggle();
+    $("#modelselect").toggle();
+  }
+  else if (vehiclemodel == "AUDI") {
+    $("#audi").toggle();
+    $("#modelselect").toggle();
+  }
+  else if (vehiclemodel == "JEEP") {
+    $("#jeep").toggle();
+    $("#modelselect").toggle();
+  }
+  else if (vehiclemodel == "JAGUAR") {
+    $("#jaguar").toggle();
+    $("#modelselect").toggle();
+  }
+  else if (vehiclemodel == "MERCEDES-BENZ") {
+    $("#mercedes-benz").toggle();
+    $("#modelselect").toggle();
+  }
+  else if (vehiclemodel == "MG") {
+    $("#mg").toggle();
+    $("#modelselect").toggle();
+  }
+  else if (vehiclemodel == "KIA") {
+    $("#kia").toggle();
+    $("#modelselect").toggle();
+  }
+  else if (vehiclemodel == "DATSUN") {
+    $("#datsun").toggle();
+    $("#modelselect").toggle();
+  }
+  else if (vehiclemodel == "FIAT") {
+    $("#fiat").toggle();
     $("#modelselect").toggle();
   }
   else{
