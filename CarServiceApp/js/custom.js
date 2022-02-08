@@ -46,7 +46,7 @@ function sendmail(){
 // });
 
 $(document).ready(function(){
-  $("#vehicletype").click(function(){
+  $("#vehicletype").focusout(function(){
     var vehicletype = $(this).find(":selected").text();
     if(vehicletype == "Select Vehicle Type"){
       $("#bfourwheeler").hide();
@@ -70,7 +70,7 @@ $(document).ready(function(){
 });
 
 
-$("#btwowheeler").click(function(){
+$("#btwowheeler").focusout(function(){
   var vehiclemodel = $('#btwowheeler').find(":selected").text();
   
   if (vehiclemodel == "TVS") {
@@ -143,7 +143,7 @@ $("#btwowheeler").click(function(){
 
 
 
-$("#bfourwheeler").click(function(){
+$("#bfourwheeler").focusout(function(){
   var vehiclemodel = $('#bfourwheeler').find(":selected").text();
   if (vehiclemodel == "MARUTI SUZUKI") {
     $(".test").hide();
