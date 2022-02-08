@@ -46,10 +46,14 @@ function sendmail(){
 // });
 
 $(document).ready(function(){
-  $("#vehicletype").focusout(function(){
+  $("#vehicletype").click(function(){
     var vehicletype = $(this).find(":selected").text();
     if(vehicletype == "Select Vehicle Type"){
-
+      $("#bfourwheeler").hide();
+      $("#btwowheeler").hide();
+      $(".test").hide();
+      $("#bselect").show();
+      $("#modelselect").show();
     }
       else if (vehicletype == "Two Wheeler") {
         $("#bfourwheeler").hide();
@@ -66,57 +70,71 @@ $(document).ready(function(){
 });
 
 
-$("#btwowheeler").focusout(function(){
+$("#btwowheeler").click(function(){
   var vehiclemodel = $('#btwowheeler').find(":selected").text();
+  
   if (vehiclemodel == "TVS") {
+    $(".test").hide();
     $("#tvs").toggle();
-    $("#modelselect").toggle();
+    $("#modelselect").hide();
   } else if (vehiclemodel == "Hero") {
+    $(".test").hide();
     $("#hero").toggle();
-    $("#modelselect").toggle();
+    $("#modelselect").hide();
   }else if (vehiclemodel == "Honda") {
+    $(".test").hide();
     $("#honda").toggle();
-    $("#modelselect").toggle();
+    $("#modelselect").hide();
   }
   else if (vehiclemodel == "Bajaj") {
+    $(".test").hide();
     $("#bajaj").toggle();
-    $("#modelselect").toggle();
+    $("#modelselect").hide();
   }
   else if (vehiclemodel == "Yamaha") {
+    $(".test").hide();
     $("#yamaha").toggle();
-    $("#modelselect").toggle();
+    $("#modelselect").hide();
   }
   else if (vehiclemodel == "Suzuki") {
+    $(".test").hide();
     $("#suzuki").toggle();
-    $("#modelselect").toggle();
+    $("#modelselect").hide();
   }
   else if (vehiclemodel == "Royal Enfield") {
+    $(".test").hide();
     $("#royalenfield").toggle();
-    $("#modelselect").toggle();
+    $("#modelselect").hide();
   }
   else if (vehiclemodel == "Hero Electric") {
+    $(".test").hide();
     $("#heroelectric").toggle();
-    $("#modelselect").toggle();
+    $("#modelselect").hide();
   }
   else if (vehiclemodel == "Okinawa") {
+    $(".test").hide();
     $("#okinawa").toggle();
-    $("#modelselect").toggle();
+    $("#modelselect").hide();
   }
   else if (vehiclemodel == "Piaggio") {
+    $(".test").hide();
     $("#piaggio").toggle();
-    $("#modelselect").toggle();
+    $("#modelselect").hide();
   }
   else if (vehiclemodel == "Mahindra") {
+    $(".test").hide();
     $("#mahindra").toggle();
-    $("#modelselect").toggle();
+    $("#modelselect").hide();
   }
   else if (vehiclemodel == "KTM") {
+    $(".test").hide();
     $("#ktm").toggle();
-    $("#modelselect").toggle();
+    $("#modelselect").hide();
   }
   else if (vehiclemodel == "ACTIVA") {
+    $(".test").hide();
     $("#activa").toggle();
-    $("#modelselect").toggle();
+    $("#modelselect").hide();
   }
   else{
     $("#modelselect").show();
@@ -125,92 +143,114 @@ $("#btwowheeler").focusout(function(){
 
 
 
-$("#bfourwheeler").focusout(function(){
+$("#bfourwheeler").click(function(){
   var vehiclemodel = $('#bfourwheeler').find(":selected").text();
   if (vehiclemodel == "MARUTI SUZUKI") {
+    $(".test").hide();
     $("#marutisuzuki").toggle();
-    $("#modelselect").toggle();
+    $("#modelselect").hide();
   } else if (vehiclemodel == "MAHINDRA") {
+    $(".test").hide();
     $("#mahindra").toggle();
-    $("#modelselect").toggle();
+    $("#modelselect").hide();
   }else if (vehiclemodel == "TATA") {
+    $(".test").hide();
     $("#tata").toggle();
-    $("#modelselect").toggle();
+    $("#modelselect").hide();
   }
   else if (vehiclemodel == "HONDA") {
+    $(".test").hide();
     $("#honda1").toggle();
-    $("#modelselect").toggle();
+    $("#modelselect").hide();
   }
   else if (vehiclemodel == "TOYOTA") {
+    $(".test").hide();
     $("#toyota").toggle();
-    $("#modelselect").toggle();
+    $("#modelselect").hide();
   }
   else if (vehiclemodel == "CHEVROLET") {
+    $(".test").hide();
     $("#chevrolet").toggle();
-    $("#modelselect").toggle();
+    $("#modelselect").hide();
   }
   else if (vehiclemodel == "NISSAN") {
+    $(".test").hide();
     $("#nissan").toggle();
-    $("#modelselect").toggle();
+    $("#modelselect").hide();
   }
   else if (vehiclemodel == "RANAULT") {
+    $(".test").hide();
     $("#ranault").toggle();
-    $("#modelselect").toggle();
+    $("#modelselect").hide();
   }else if (vehiclemodel == "FORD") {
+    $(".test").hide();
     $("#ford").toggle();
-    $("#modelselect").toggle();
+    $("#modelselect").hide();
   }
   else if (vehiclemodel == "SKODA") {
+    $(".test").hide();
     $("#skoda").toggle();
-    $("#modelselect").toggle();
+    $("#modelselect").hide();
   }
   else if (vehiclemodel == "HYUNDAI") {
+    $(".test").hide();
     $("#hyundai").toggle();
-    $("#modelselect").toggle();
+    $("#modelselect").hide();
   }
   else if (vehiclemodel == "VOLKSWAGEN") {
+    $(".test").hide();
     $("#volkswagen").toggle();
-    $("#modelselect").toggle();
+    $("#modelselect").hide();
   }
   else if (vehiclemodel == "LAND ROVER") {
+    $(".test").hide();
     $("#land-rover").toggle();
-    $("#modelselect").toggle();
+    $("#modelselect").hide();
   }
   else if (vehiclemodel == "BMW") {
+    $(".test").hide();
     $("#bmw").toggle();
-    $("#modelselect").toggle();
+    $("#modelselect").hide();
   }
   else if (vehiclemodel == "AUDI") {
+    $(".test").hide();
     $("#audi").toggle();
-    $("#modelselect").toggle();
+    $("#modelselect").hide();
   }
   else if (vehiclemodel == "JEEP") {
+    $(".test").hide();
     $("#jeep").toggle();
-    $("#modelselect").toggle();
+    $("#modelselect").hide();
   }
   else if (vehiclemodel == "JAGUAR") {
+    $(".test").hide();
     $("#jaguar").toggle();
-    $("#modelselect").toggle();
+    $("#modelselect").hide();
   }
   else if (vehiclemodel == "MERCEDES-BENZ") {
+    $(".test").hide();
     $("#mercedes-benz").toggle();
-    $("#modelselect").toggle();
+    $("#modelselect").hide();
   }
   else if (vehiclemodel == "MG") {
+    $(".test").hide();
     $("#mg").toggle();
-    $("#modelselect").toggle();
+    $("#modelselect").hide();
   }
   else if (vehiclemodel == "KIA") {
+    $(".test").hide();
     $("#kia").toggle();
-    $("#modelselect").toggle();
+    $("#modelselect").hide();
   }
   else if (vehiclemodel == "DATSUN") {
+    $(".test").hide();
     $("#datsun").toggle();
-    $("#modelselect").toggle();
+    $("#modelselect").hide();
   }
   else if (vehiclemodel == "FIAT") {
+    $(".test").hide();
     $("#fiat").toggle();
-    $("#modelselect").toggle();
+    $("#modelselect").hide();
   }
   else{
     $("#modelselect").show();
