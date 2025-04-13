@@ -1,32 +1,36 @@
-Miniport by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+Welcome to my personal portfolio website! I am a Front-End Designer, UI/UX Designer, and Motion Designer. This website is a collection of my work, where you can explore my design projects, user interfaces, motion graphics, and my professional journey.
 
+🚀 Purpose
+This portfolio serves as a visual representation of my skills, experience, and creative process. My aim is to provide a platform where potential clients, collaborators, and employers can see my design work, understand my approach, and get in touch.
 
-A super simple responsive portfolio template. It's only a single page because hey, sometimes
-you don't need a half dozen pages to make your point.
+🛠️ Built With
+HTML5 & CSS3
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
+JavaScript (for interactivity and animations)
 
-(* = Not included)
+React (if used for the website framework)
 
-Feedback, bug reports, and comments are not only welcome, but strongly encouraged :)
+Figma / Sketch / Adobe XD (for UI/UX design)
 
-AJ
-aj@lkn.io | @ajlkn
+After Effects & Principle (for motion design)
 
-PS: Not sure how to get that contact form working? Give formspree.io a try (it's awesome).
+Tailwind CSS or SASS (for styling)
 
+GSAP (for animations)
 
-Credits:
+You can adjust the technologies listed here based on what you actually used.
 
-	Demo Images:
-		Unsplash (unsplash.com)
+📸 Features
+About Me section with personal and professional details.
 
-	Icons:
-		Font Awesome (fontawesome.io)
+Project Showcase with clickable images/videos for each design project.
 
-	Other:
-		jQuery (jquery.com)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+Interactive Design Demos (for showcasing UI/UX prototypes and motion designs).
+
+Resume/CV with downloadable link.
+
+Contact Form for inquiries.
+
+Responsive Design – the website looks great on all devices, from mobile to desktop.
+
+Dark Mode Toggle – a sleek, user-friendly design with theme options.
